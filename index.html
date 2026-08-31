@@ -1,19 +1,42 @@
 <!DOCTYPE HTML>
 <!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Dimension by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 
 <head>
-	<title>pheex.io | security & opsec</title>
+	<title>pheex.io</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<style>
+		/* Custom style for circular profile avatar in the header */
+		#header .logo img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 50%;
+			display: block;
+		}
+
+		/* Force lowercase aesthetic globally */
+		body,
+		h1,
+		h2,
+		h3,
+		p,
+		li,
+		a,
+		span,
+		code {
+			text-transform: lowercase;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -24,20 +47,18 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<span class="icon fa-user-shield"></span>
+				<img src="images/profile.jpg" alt="pheex.io avatar" />
 			</div>
 			<div class="content">
 				<div class="inner">
 					<h1>pheex.io</h1>
-					<p>security • opsec • privacy<br />
-						Welcome to my personal site.</p>
+					<p>security • opsec • privacy<br /></p>
 				</div>
 			</div>
 			<nav>
 				<ul>
 					<li><a href="#intro">intro</a></li>
 					<li><a href="#focus">focus</a></li>
-					<li><a href="#about">about</a></li>
 					<li><a href="#contact">contact</a></li>
 				</ul>
 			</nav>
@@ -48,59 +69,39 @@
 
 			<!-- Intro -->
 			<article id="intro">
-				<h2 class="major">Intro</h2>
-				<span class="image main"><img src="images/pic01.jpg" alt="Intro Banner" /></span>
-				<p>Hello! I am <b>phixion</b>.</p>
-				<p>My work centers on <b>Cybersecurity, Operational Security (OpSec), Threat Mitigation</b>, and
-					<b>Privacy</b>. I build, harden, and audit systems designed to withstand real-world attack vectors
-					while maintaining high operational privacy.</p>
-				<p>Explore my <a href="#focus">key areas of focus</a> or view my interactive CV at <a
-						href="https://cv.chaot.dev" target="_blank" rel="noopener">cv.chaot.dev</a>.</p>
+				<h2 class="major">intro</h2>
+				<p>hello! i am <b>martin</b>.</p>
+				<p>my work centers on <b>cybersecurity, operational security, threat mitigation</b>, and
+					<b>privacy</b>. i build, harden, and audit systems designed to withstand real-world attack vectors
+					while maintaining high operational privacy.
+				</p>
 			</article>
 
 			<!-- Focus -->
 			<article id="focus">
-				<h2 class="major">Focus</h2>
-				<span class="image main"><img src="images/pic02.jpg" alt="Security Focus Banner" /></span>
-				<p>Core domains and technical focus areas:</p>
+				<h2 class="major">focus</h2>
+				<p>core domains and technical focus areas:</p>
 				<ul>
-					<li><b>Operational Security (OpSec):</b> Threat modeling, footprint reduction, digital hygiene, and
+					<li><b>operational security (opsec):</b> threat modeling, footprint reduction, digital hygiene, and
 						identity isolation.</li>
-					<li><b>Security Operations & Hardening:</b> System hardening, network segmentation, zero-trust
+					<li><b>security operations & hardening:</b> system hardening, network segmentation, zero-trust
 						architectures, and secure configurations.</li>
-					<li><b>Privacy & Traffic Filtering:</b> Custom blocklists, Pi-hole DNS filtering, encrypted
-						protocols (DoH/DoT), and self-hosted privacy tooling.</li>
-					<li><b>SecOps & Automation:</b> Secure CI/CD pipelines, container isolation, and automated
-						vulnerability management.</li>
+					<li><b>certification:</b> oscp, cissp</li>
 				</ul>
-				<p>Check out my public repositories on <a href="https://github.com/phixion" target="_blank"
-						rel="noopener">GitHub (phixion)</a> and the <a href="https://github.com/pheex-io"
-						target="_blank" rel="noopener">pheex-io organization</a>.</p>
-			</article>
-
-			<!-- About -->
-			<article id="about">
-				<h2 class="major">About</h2>
-				<span class="image main"><img src="images/pic03.jpg" alt="About Banner" /></span>
-				<p>Driven by offensive and defensive security, OpSec best practices, and robust system architecture. I
-					focus on minimizing attack surfaces, protecting digital assets, and implementing zero-trust security
-					frameworks.</p>
-				<p>For more technical details, background, and career history, check out my CV:</p>
-				<p style="text-align: center;">
-					<a href="https://cv.chaot.dev" class="button primary icon solid fa-user-shield" target="_blank"
-						rel="noopener">View CV on cv.chaot.dev</a>
-				</p>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
-				<h2 class="major">Contact</h2>
-				<p>Want to connect, collaborate, or discuss OpSec and Cybersecurity? Reach out via:</p>
+				<h2 class="major">contact</h2>
 				<ul class="icons">
+					<li><a href="mailto:m@rtin.ms" class="icon solid fa-envelope"><span class="label">email</span></a>
+					</li>
 					<li><a href="https://github.com/phixion" class="icon brands fa-github" target="_blank"
-							rel="noopener"><span class="label">GitHub</span></a></li>
-					<li><a href="https://cv.chaot.dev" class="icon solid fa-id-card" target="_blank"
-							rel="noopener"><span class="label">CV</span></a></li>
+							rel="noopener"><span class="label">github</span></a></li>
+					<li><a href="https://chaos.social/@phixion" class="icon brands fa-mastodon" target="_blank"
+							rel="me noopener"><span class="label">mastodon</span></a></li>
+					<li><a href="downloads/publickey.asc" download="pheex_publickey.asc" class="icon solid fa-key"><span
+								class="label">pgp key</span></a></li>
 				</ul>
 			</article>
 
@@ -108,7 +109,7 @@
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; phixion. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			<p class="copyright">&copy; pheex.io. 2026 </p>
 		</footer>
 
 	</div>
